@@ -6,12 +6,28 @@
 body {
     font-family: sans-serif;
     color: black;
+    padding: 40px;
 }
 
 article {
     border: 5px solid black;
     margin: 0 auto;
     width: 825px;
+    position: relative;
+}
+
+article::before {
+    content: "SALE";
+    color: white;
+    background-color: rgb(204, 1, 1);
+    display: inline-block;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 7px 13px;
+    position: absolute;
+    top: -15px;
+    left: -37px;
+    letter-spacing: 2.5px;
 }
 
 h2,
@@ -74,4 +90,45 @@ button:hover {
     background-color: white;
     cursor: pointer;
     border: 5px solid white;
+}
+
+.boxes {
+    margin-top: 30px;
+}
+
+.box1,
+.box2,
+.box3,
+.box4,
+.box5,
+.box6 {
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.box1 {
+    background-color: #000;
+
+}
+
+.box2 {
+    background-color: blue;
+}
+
+.box3 {
+    background-color: pink;
+}
+
+.box4 {
+    background-color: yellow;
+}
+
+.box5 {
+    background-color: greenyellow;
+}
+
+.box6 {
+    background-color: brown;
 }
