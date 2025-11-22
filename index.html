@@ -8,7 +8,7 @@
 
 <body>
     <div class="container">
-        <header class="main-header">
+        <header class="main-header clearfix">
             <h1>📘 The Code Magazine</h1>
             <nav>
                 <a href="blog.html">Blog</a>
@@ -16,14 +16,15 @@
                 <a href="#">Flexbox</a>
                 <a href="#">CSS Grid</a>
             </nav>
+            <!-- <div class="clear"></div> -->
         </header>
         <article>
             <header class="post-header">
                 <h2>The Basic Language of the Web: HTML</h2>
 
-                <img src="img/laura-jones.jpg" alt="Headshot of Laura Jones" width="50" height="50">
+                <img class="author-img" src="img/laura-jones.jpg" alt="Headshot of Laura Jones" width="50" height="50">
 
-                <p id="author">Posted by <strong>Laura Jones</strong> on Monday, June 21st 2027</p>
+                <p id="author" class="author">Posted by <strong>Laura Jones</strong> on Monday, June 21st 2027</p>
 
                 <img src="img/post-img.jpg" alt="HTML code on screen" width="500" height="200" class="post-img">
             </header>
@@ -78,7 +79,7 @@
         </article>
         <aside>
             <h4>Related posts</h4>
-            <ul id="related-posts">
+            <ul id="related-posts" class="related">
                 <li><img src="img/related-1.jpg" alt="related image" width="75" height="75"><a href="#">How to learn web
                         development</a>
                     <p class="related-author">by Jonas Schmedtmann</p>

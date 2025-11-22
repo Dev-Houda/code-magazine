@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -37,8 +38,10 @@ button {
     text-transform: uppercase;
 }
 
-strong {
+p strong {
     font-size: 24px;
+    float: left;
+    margin-top: 23px;
 }
 
 h2 {
@@ -51,10 +54,14 @@ h2 {
     color: #7a7a7a;
     font-weight: bold;
     margin-bottom: 20px;
+    float: right;
+    margin-top: 30px;
 }
 
 .desc {
     margin-bottom: 15px;
+    clear: both;
+    margin-top: 83px;
 }
 
 a:link {
@@ -131,4 +138,20 @@ button:hover {
 
 .box6 {
     background-color: brown;
+}
+
+.image {
+    float: left;
+}
+
+.info {
+    width: 250px;
+    float: left;
+    margin-left: 37.5px;
+}
+
+.details {
+    float: right;
+    width: 250px;
+    padding-right: 30px;
 }
